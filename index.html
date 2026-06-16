@@ -1,0 +1,633 @@
+<!-- ============================================================
+     НАСЛЕДИЕ БУДУЩЕГО — HTML КОД ДЛЯ ТИЛЬДЫ (итоговый с требованиями и FAQ)
+     Копируйте каждую секцию отдельно в блок «HTML-код» на Тильде
+     ============================================================ -->
+
+<!-- ============================================================
+     1. ШАПКА (HEADER) — вставлять в самый верх сайта
+     ============================================================ -->
+
+<header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #E8E3D8; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 64px; flex-wrap: wrap;">
+
+    <!-- Логотип + название -->
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663675182666/8Gt29WYsrFWH9AgdLWN547/logo-mark-APXfxbcVNALu7v8BGhSYQv.webp" alt="Логотип" style="height: 40px; width: 40px; flex-shrink: 0;">
+      <div>
+        <h1 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; line-height: 1.2;">Наследие Будущего</h1>
+        <p style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11px; color: #999; letter-spacing: 0.3px;">Конкурс искусств</p>
+      </div>
+    </div>
+
+    <!-- Навигация -->
+    <nav style="display: flex; align-items: center; gap: 24px; margin: 0; flex-wrap: wrap;">
+      <a href="#about" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">О конкурсе</a>
+      <a href="#benefits" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">Преимущества</a>
+      <a href="#nominations" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">Номинации</a>
+      <a href="#requirements" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">Требования</a>
+      <a href="#faq" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">FAQ</a>
+      <a href="#apply-form" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #C85A3A; text-decoration: none; font-weight: 600; transition: color 0.3s;">Заявка</a>
+    </nav>
+
+    <!-- Кнопка -->
+    <a href="#apply-form" style="background: #C85A3A; color: #fff; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; transition: background 0.3s; white-space: nowrap;">Подать заявку</a>
+  </div>
+</header>
+
+<!-- ============================================================
+     2. ГЕРОЙ (HERO SECTION)
+     ============================================================ -->
+
+<section style="position: relative; min-height: 560px; height: 100vh; max-height: 700px; overflow: hidden; background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663675182666/8Gt29WYsrFWH9AgdLWN547/hero-banner-6YpkDpuSvGN44DsjYm8x79.webp') center/cover no-repeat;">
+
+  <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.2) 80%, transparent 100%);"></div>
+
+  <div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 100%; display: flex; flex-direction: column; justify-content: center; max-width: 640px;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 56px); font-weight: 700; color: #fff; margin: 0 0 16px 0; line-height: 1.2;">Творческое будущее России</h2>
+    <p style="font-family: 'Inter', sans-serif; font-size: clamp(16px, 2vw, 20px); color: rgba(255,255,255,0.92); margin: 0 0 32px 0; line-height: 1.6;">Раскройте свой творческий потенциал на сцене, где каждый голос имеет значение</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+      <a href="#apply-form" style="background: #C85A3A; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s;">Подать заявку</a>
+      <a href="#about" style="background: transparent; color: #fff; border: 2px solid #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s;">Узнать больше</a>
+    </div>
+  </div>
+
+  <svg style="position: absolute; bottom: -1px; left: 0; width: 100%; height: 70px;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z" fill="#F5F1E8"></path>
+  </svg>
+</section>
+
+<!-- ============================================================
+     3. О КОНКУРСЕ (ABOUT)
+     ============================================================ -->
+
+<section id="about" style="background: #F5F1E8; padding: 80px 20px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <div style="max-width: 800px; margin: 0 auto 48px; text-align: center;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">О конкурсе</h2>
+      <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); margin: 0; line-height: 1.6;">Всероссийский конкурс искусств «Наследие Будущего» — это платформа для выявления и поддержки талантливых исполнителей и коллективов, сохранения и развития культурного наследия России.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; margin-bottom: 48px;">
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 32px; transition: box-shadow 0.3s;">
+        <svg style="width: 48px; height: 48px; color: #C85A3A; margin-bottom: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Всероссийский масштаб</h3>
+        <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">Конкурс проводится в дистанционном формате, позволяя талантам со всей России участвовать без географических ограничений.</p>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 32px; transition: box-shadow 0.3s;">
+        <svg style="width: 48px; height: 48px; color: #C85A3A; margin-bottom: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Для всех возрастов</h3>
+        <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">От младших детей до взрослых профессионалов — каждый найдет свою категорию и сможет продемонстрировать свой талант.</p>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 32px; transition: box-shadow 0.3s;">
+        <svg style="width: 48px; height: 48px; color: #C85A3A; margin-bottom: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6-6 6 6"/><path d="M6 9v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V9"/><circle cx="12" cy="14" r="2"/></svg>
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Признание и награды</h3>
+        <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">Профессиональное жюри оценивает работы по четким критериям, обеспечивая справедливое и объективное судейство.</p>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(200,90,58,0.08) 0%, rgba(107,168,118,0.08) 100%); border: 2px solid rgba(200,90,58,0.2); border-radius: 16px; padding: 32px;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #C85A3A; margin: 0 0 24px 0;">Ключевые даты</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px;">
+        <div><p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #999; margin: 0 0 8px 0;">Начало приема заявок</p><p style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0;">17 июня 2026</p></div>
+        <div><p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #999; margin: 0 0 8px 0;">Завершение приема</p><p style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0;">15 июля 2026</p></div>
+        <div><p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #999; margin: 0 0 8px 0;">Оценка работ</p><p style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0;">По понедельникам</p></div>
+        <div><p style="font-family: 'Inter', sans-serif; font-size: 12px; color: #999; margin: 0 0 8px 0;">Объявление результатов</p><p style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0;">До 20 июля 2026</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. ПРЕИМУЩЕСТВА (BENEFITS)
+     ============================================================ -->
+
+<section id="benefits" style="background: #fff; padding: 80px 20px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <div style="max-width: 800px; margin: 0 auto 48px; text-align: center;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">Почему участвовать?</h2>
+      <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); margin: 0; line-height: 1.6;">Участие в конкурсе — это не просто возможность получить награду, это путь к личному и творческому развитию</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+
+      <div>
+
+        <div style="display: flex; gap: 16px; margin-bottom: 28px;">
+          <div style="flex-shrink: 0;"><svg style="width: 32px; height: 32px; color: #C85A3A;" viewBox="0 0 24 24" fill="currentColor"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <div><h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #2B2B2B; margin: 0 0 8px 0;">Творческое развитие</h4><p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">Расширьте свои навыки, исследуйте новые идеи и раскройте свой творческий потенциал через участие в конкурсе.</p></div>
+        </div>
+
+        <div style="display: flex; gap: 16px; margin-bottom: 28px;">
+          <div style="flex-shrink: 0;"><svg style="width: 32px; height: 32px; color: #C85A3A;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <div><h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #2B2B2B; margin: 0 0 8px 0;">Признание и видимость</h4><p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">Получите внимание профессионального жюри и возможность быть замеченным в творческой среде.</p></div>
+        </div>
+
+        <div style="display: flex; gap: 16px; margin-bottom: 28px;">
+          <div style="flex-shrink: 0;"><svg style="width: 32px; height: 32px; color: #C85A3A;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <div><h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #2B2B2B; margin: 0 0 8px 0;">Сетевые связи</h4><p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">Встретьте единомышленников, найдите наставников и создайте долгосрочные творческие партнерства.</p></div>
+        </div>
+
+        <div style="display: flex; gap: 16px;">
+          <div style="flex-shrink: 0;"><svg style="width: 32px; height: 32px; color: #C85A3A;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 17"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <div><h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #2B2B2B; margin: 0 0 8px 0;">Карьерный рост</h4><p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #666; margin: 0; line-height: 1.6;">Добавьте в портфолио победу на престижном конкурсе и откройте новые профессиональные возможности.</p></div>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663675182666/8Gt29WYsrFWH9AgdLWN547/benefits-section-AALTJAhvG6Ugys5GHthMhN.webp" alt="Преимущества" style="width: 100%; border-radius: 16px; box-shadow: 0 12px 24px rgba(0,0,0,0.15);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. НОМИНАЦИИ (NOMINATIONS)
+     ============================================================ -->
+
+<section id="nominations" style="background: #F5F1E8; padding: 80px 20px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 48px 0;">Номинации конкурса</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎤 Вокал</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Академический вокал</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Народный вокал</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Эстрадный вокал</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Джазовый вокал</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">• Авторская песня</li>
+        </ul>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">💃 Танец</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Классический танец</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Народный танец</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Эстрадный танец</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Современная хореография</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">• Спортивный танец</li>
+        </ul>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎻 Инструменты</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Фортепиано</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Струнные инструменты</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Духовые инструменты</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Народные инструменты</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">• Ударные инструменты</li>
+        </ul>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎭 Театр</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Художественное слово</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Театральная миниатюра</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">• Кукольный театр</li>
+        </ul>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎨 Визуальное</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Живопись</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Графика</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Скульптура</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• ДПИ</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Фотография</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">• Кино и видео</li>
+        </ul>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎪 Оригинальный жанр</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">• Цирковое искусство</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">• Иллюзион</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. ИНТЕРЕСНЫЕ ФАКТЫ (ART FACTS)
+     ============================================================ -->
+
+<section id="facts" style="background: #fff; padding: 80px 20px; position: relative; overflow: hidden;">
+
+  <div style="position: absolute; inset: 0; background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663675182666/8Gt29WYsrFWH9AgdLWN547/art-facts-bg-4y2Nu5wptcrAoohKsj8iZR.webp') center/cover; opacity: 0.15; z-index: 0;"></div>
+
+  <div style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 48px 0;">Интересные факты об искусстве</h2>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px;">
+
+      <div style="background: rgba(255,255,255,0.92); border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Да Винчи и его перфекционизм</h4>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Леонардо да Винчи работал над картиной «Мона Лиза» более 10 лет, постоянно совершенствуя детали. Его стремление к совершенству стало символом творческой преданности.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.92); border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Синий цвет в истории искусства</h4>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Ультрамариновый синий был одним из самых дорогих пигментов в истории. Художники часто зарезервировали его для самых важных элементов своих произведений.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.92); border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Музыка и математика</h4>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Композиторы часто используют математические пропорции для создания гармонии. Числа Фибоначчи встречаются в структуре многих классических произведений.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.92); border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Танец как язык</h4>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Танец — это универсальный язык, который существует во всех культурах. Каждый танец рассказывает историю и передает эмоции без слов.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.92); border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Театр и катарсис</h4>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Аристотель определил катарсис как очищение эмоций через искусство. Театр служит местом, где зрители могут пережить и отпустить свои чувства.</p>
+      </div>
+
+      <div style="background: rgba(255,255,255,0.92); border: 1px solid #E8E3D8; border-radius: 12px; padding: 24px;">
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #C85A3A; margin: 0 0 12px 0;">Фотография изменила искусство</h4>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Изобретение фотографии в XIX веке революционизировало живопись, позволив художникам экспериментировать с абстракцией и новыми формами выражения.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. КРИТЕРИИ ОЦЕНКИ (CRITERIA)
+     ============================================================ -->
+
+<section style="background: #F5F1E8; padding: 80px 20px;">
+  <div style="max-width: 800px; margin: 0 auto;">
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 48px 0;">Критерии оценки</h2>
+
+    <div style="border: 1px solid #E8E3D8; border-radius: 8px; overflow: hidden;">
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A;">🔥</span> Исполнительское мастерство и техника (30 баллов)
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 14px; color: #666; line-height: 1.6;">Уровень владения инструментом, голосом, телом; чистота интонации, ритма; техническая сложность произведения. Жюри оценивает профессионализм и технические навыки исполнителя.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A;">✨</span> Артистизм и сценическая культура (25 баллов)
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 14px; color: #666; line-height: 1.6;">Сценическое поведение, образность, контакт со зрителем, уверенность, харизма. Это оценка того, как исполнитель передает эмоции и взаимодействует с аудиторией.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A;">🎨</span> Оригинальность и выразительность (20 баллов)
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 14px; color: #666; line-height: 1.6;">Новаторство подхода, нестандартность интерпретации, авторская концепция, индивидуальный стиль. Жюри ценит творческое мышление и уникальный взгляд.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A;">🏆</span> Соответствие репертуара возрасту (15 баллов)
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 14px; color: #666; line-height: 1.6;">Адекватность выбора произведения возрасту, уровню подготовки, номинации; целостность образа. Произведение должно быть подходящим для возрастной категории участника.</div>
+      </details>
+
+      <details>
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A;">❤️</span> Общее художественное впечатление (10 баллов)
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 14px; color: #666; line-height: 1.6;">Целостность выступления, эмоциональное воздействие, запоминаемость, гармония всех компонентов. Это общее впечатление от выступления как целого.</div>
+      </details>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(200,90,58,0.08) 0%, rgba(107,168,118,0.08) 100%); border: 2px solid rgba(200,90,58,0.2); border-radius: 16px; padding: 32px; margin-top: 32px; text-align: center;">
+      <p style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; margin: 0 0 8px 0;">Максимальный балл: 100 баллов</p>
+      <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Оценка проводится профессиональным жюри, состоящим из ведущих деятелей культуры и искусства.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. ТРЕБОВАНИЯ К МАТЕРИАЛАМ (REQUIREMENTS) — НОВЫЙ БЛОК
+     ============================================================ -->
+
+<section id="requirements" style="background: #fff; padding: 80px 20px;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 16px 0;">Требования к материалам</h2>
+    <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); text-align: center; margin: 0 0 48px 0; line-height: 1.6;">Внимательно ознакомьтесь с техническими требованиями к вашим конкурсным работам</p>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+
+      <!-- Видеовыступления -->
+      <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #C85A3A;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎥 Видеовыступления</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
+          <li><strong>Формат:</strong> MP4, MOV</li>
+          <li><strong>Разрешение:</strong> не ниже 1280×720 (HD)</li>
+          <li><strong>Длительность:</strong> 2–7 минут (театр — до 40 мин)</li>
+          <li><strong>Размер:</strong> не более 1 ГБ</li>
+          <li><strong>Звук:</strong> чёткий, синхронизированный</li>
+          <li><strong>Съёмка:</strong> фронтальная, статичная, без монтажа</li>
+          <li><strong>Титры в начале:</strong> ФИО, возраст, номинация, название (не более 5 сек)</li>
+        </ul>
+      </div>
+
+      <!-- Фото работ (ИЗО и ДПИ) -->
+      <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #6BA876;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #6BA876; margin: 0 0 16px 0;">🖼️ Фото работ (ИЗО и ДПИ)</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
+          <li><strong>Формат:</strong> JPEG, PNG</li>
+          <li><strong>Разрешение:</strong> не менее 3000px по длинной стороне</li>
+          <li><strong>Размер:</strong> 1–20 МБ на файл</li>
+          <li><strong>Количество:</strong> до 3 фото на работу</li>
+          <li><strong>Фон:</strong> нейтральный (белый, серый, чёрный)</li>
+          <li><strong>Для скульптуры/ДПИ:</strong> фото с объектом для масштаба</li>
+        </ul>
+      </div>
+
+      <!-- Фотоискусство -->
+      <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #C85A3A;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">📸 Фотоискусство</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
+          <li><strong>Формат:</strong> JPEG</li>
+          <li><strong>Разрешение:</strong> не менее 3000px по длинной стороне</li>
+          <li><strong>Размер:</strong> 2–15 МБ</li>
+          <li><strong>Цветовой профиль:</strong> sRGB</li>
+          <li><strong>Обработка:</strong> только экспозиция, контраст, баланс белого</li>
+          <li><strong>Запрещено:</strong> фотомонтаж и коллажи</li>
+          <li><strong>Репортаж:</strong> до 5 снимков в серии</li>
+        </ul>
+      </div>
+
+      <!-- Кино и видео -->
+      <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #6BA876;">
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #6BA876; margin: 0 0 16px 0;">🎬 Кино- и видеоискусство</h3>
+        <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
+          <li><strong>Формат:</strong> MP4 (H.264)</li>
+          <li><strong>Разрешение:</strong> не ниже 1920×1080 (Full HD)</li>
+          <li><strong>Длительность:</strong> фильм — до 15 мин, мульт — до 10 мин</li>
+          <li><strong>Размер:</strong> не более 2 ГБ</li>
+          <li><strong>Титры:</strong> название, автор, год, номинация</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="margin-top: 32px; padding: 20px; background: rgba(200,90,58,0.08); border-radius: 12px; text-align: center; border: 1px dashed #C85A3A;">
+      <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; margin: 0;">Если ваша номинация не указана в списке (например, художественное слово), загрузите видеозапись выступления согласно требованиям к <strong>видеовыступлениям</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     9. ПРИЗЫВ К ДЕЙСТВИЮ (CTA)
+     ============================================================ -->
+
+<section style="background: linear-gradient(135deg, #C85A3A 0%, rgba(200,90,58,0.85) 100%); padding: 80px 20px; text-align: center; color: #fff;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; margin: 0 0 24px 0;">Готовы раскрыть свой талант?</h2>
+    <p style="font-family: 'Inter', sans-serif; font-size: 18px; margin: 0 0 32px 0; line-height: 1.6; opacity: 0.92;">От мечты к сцене: ваше путешествие начинается здесь. Подайте заявку и станьте частью творческого сообщества России.</p>
+    <a href="#apply-form" style="background: #fff; color: #C85A3A; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; display: inline-block; transition: background 0.3s;">Подать заявку сейчас</a>
+  </div>
+</section>
+
+<!-- ============================================================
+     10. ФОРМА ЗАЯВКИ (APPLICATION FORM)
+     ============================================================ -->
+
+<section id="apply-form" style="background: #fff; padding: 80px 20px;">
+  <div style="max-width: 900px; margin: 0 auto;">
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 16px 0;">Заявка на участие</h2>
+    <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); text-align: center; margin: 0 0 40px 0; line-height: 1.6;">Заполните форму, чтобы подать заявку на конкурс. Все поля, отмеченные <span style="color:#C85A3A;">*</span>, обязательны для заполнения.</p>
+
+    <form action="/apply" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 24px;">
+
+      <div>
+        <label for="fullname" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО участника (или название коллектива) <span style="color:#C85A3A;">*</span></label>
+        <input type="text" id="fullname" name="fullname" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; transition: border-color 0.3s;">
+      </div>
+
+      <div>
+        <label for="region" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Регион и населённый пункт <span style="color:#C85A3A;">*</span></label>
+        <input type="text" id="region" name="region" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="nomination" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Номинация <span style="color:#C85A3A;">*</span></label>
+        <select id="nomination" name="nomination" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; background: #fff;">
+          <option value="">Выберите номинацию</option>
+          <option value="vocal">Вокальное искусство</option>
+          <option value="choreo">Хореографическое искусство</option>
+          <option value="instrumental">Инструментальное исполнительство</option>
+          <option value="theatre">Театральное искусство</option>
+          <option value="fineart">Изобразительное искусство</option>
+          <option value="decorative">Декоративно-прикладное искусство</option>
+          <option value="original">Оригинальный жанр</option>
+          <option value="photo">Фотоискусство</option>
+          <option value="cinema">Кино- и видеоискусство</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="worktitle" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Название работы <span style="color:#C85A3A;">*</span></label>
+        <input type="text" id="worktitle" name="worktitle" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="teacher1" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО первого руководителя / педагога <span style="color:#C85A3A;">*</span></label>
+        <input type="text" id="teacher1" name="teacher1" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="teacher2" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО второго руководителя / педагога</label>
+        <input type="text" id="teacher2" name="teacher2" style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="teacher3" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО третьего руководителя / педагога</label>
+        <input type="text" id="teacher3" name="teacher3" style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="agecategory" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Возрастная категория <span style="color:#C85A3A;">*</span></label>
+        <select id="agecategory" name="agecategory" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; background: #fff;">
+          <option value="">Выберите категорию</option>
+          <option value="до 7 лет">Младшая детская (до 7 лет)</option>
+          <option value="8-11 лет">Средняя детская (8–11 лет)</option>
+          <option value="12-16 лет">Подростковая (12–16 лет)</option>
+          <option value="17-25 лет">Молодёжная (17–25 лет)</option>
+          <option value="26+">Взрослые (от 26 лет)</option>
+          <option value="смешанная">Смешанная категория</option>
+          <option value="учитель-ученик">Учитель и ученик</option>
+          <option value="преподаватель">Преподаватель — мастер</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="institution" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Учреждение (школа, студия, вуз и т.п.)</label>
+        <input type="text" id="institution" name="institution" style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="email" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Контактный e-mail <span style="color:#C85A3A;">*</span></label>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="phone" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Контактный телефон <span style="color:#C85A3A;">*</span></label>
+        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div>
+        <label style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Загрузка конкурсных материалов <span style="color:#C85A3A;">*</span></label>
+        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0 0 12px 0;">Принимаются файлы видео (MP4, MOV), фото (JPEG, PNG) и документы (PDF). Максимальный размер каждого файла — 1 ГБ (для видео) или 20 МБ (для фото).</p>
+        <input type="file" id="file" name="file" accept=".mp4,.mov,.jpeg,.jpg,.png,.pdf" required multiple style="width: 100%; padding: 8px 0; font-family: 'Inter', sans-serif; font-size: 16px;">
+      </div>
+
+      <div style="display: flex; align-items: flex-start; gap: 12px; margin-top: 8px;">
+        <input type="checkbox" id="consent" name="consent" required style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;">
+        <label for="consent" style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; line-height: 1.5;">Я даю согласие на обработку моих персональных данных в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» <span style="color:#C85A3A;">*</span></label>
+      </div>
+
+      <div style="text-align: center; margin-top: 8px;">
+        <button type="submit" style="background: #C85A3A; color: #fff; padding: 16px 48px; border: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer; transition: background 0.3s;">Отправить заявку</button>
+      </div>
+
+      <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #999; text-align: center; margin: 16px 0 0 0;">После отправки вы получите уведомление о модерации в течение 3 рабочих дней.</p>
+
+    </form>
+
+    <div style="margin-top: 48px; background: #F5F1E8; border-radius: 12px; padding: 24px; text-align: center;">
+      <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; margin: 0 0 8px 0;">Организационный взнос за участие: <strong style="color: #C85A3A;">250 рублей</strong> за одну заявку.</p>
+      <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Оплата производится после успешной модерации заявки. Способы оплаты: банковская карта или СБП.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     11. ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ (FAQ) — НОВЫЙ БЛОК
+     ============================================================ -->
+
+<section id="faq" style="background: #F5F1E8; padding: 80px 20px;">
+  <div style="max-width: 800px; margin: 0 auto;">
+
+    <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 16px 0;">Часто задаваемые вопросы</h2>
+    <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); text-align: center; margin: 0 0 48px 0; line-height: 1.6;">Ответы на самые популярные вопросы участников</p>
+
+    <div style="border: 1px solid #E8E3D8; border-radius: 12px; overflow: hidden;">
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A; font-size: 20px;">❓</span> Кто может участвовать в конкурсе?
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">К участию приглашаются солисты и коллективы без возрастных ограничений. Для каждой возрастной категории (от младшей детской до «Преподаватель — мастер») предусмотрены отдельные группы оценки.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A; font-size: 20px;">❓</span> Сколько стоит участие?
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Организационный взнос составляет <strong>250 рублей</strong> за одну заявку (одно выступление / одну работу / одну серию фотографий). Оплата производится после успешной модерации заявки.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A; font-size: 20px;">❓</span> Какие форматы файлов принимаются?
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Для видео: MP4, MOV. Для фото: JPEG, PNG. Для документов: PDF. Подробные технические требования (разрешение, длительность, размер) указаны в разделе <a href="#requirements" style="color: #C85A3A; text-decoration: underline;">«Требования к материалам»</a>.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A; font-size: 20px;">❓</span> Можно ли подать несколько заявок?
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Да, один участник или коллектив может подать несколько заявок в разных номинациях или с разными работами. Каждая заявка оплачивается отдельно.</div>
+      </details>
+
+      <details style="border-bottom: 1px solid #E8E3D8;">
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A; font-size: 20px;">❓</span> Как я узнаю результаты?
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Результаты публикуются на официальном сайте не позднее <strong>20 июля 2026 года</strong>. Все дипломы и благодарственные письма отправляются на указанный e-mail в течение 7 рабочих дней после объявления результатов.</div>
+      </details>
+
+      <details>
+        <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
+          <span style="color: #C85A3A; font-size: 20px;">❓</span> Можно ли обжаловать оценку жюри?
+        </summary>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Да, вы вправе подать апелляцию в течение 5 календарных дней с даты публикации результатов. Апелляция подаётся в письменном виде на e-mail с темой «Апелляция — [номер заявки]». Решение апелляционной комиссии является окончательным.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     12. ФУТЕР (FOOTER) — ОБНОВЛЁННЫЙ
+     ============================================================ -->
+
+<footer style="background: #fff; border-top: 1px solid #E8E3D8; padding: 48px 20px;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 32px; margin-bottom: 32px;">
+
+      <div>
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">О конкурсе</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 8px;"><a href="#about" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">О нас</a></li>
+          <li style="margin-bottom: 8px;"><a href="#nominations" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Номинации</a></li>
+          <li><a href="#requirements" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Требования к материалам</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">Участнику</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 8px;"><a href="#apply-form" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Подать заявку</a></li>
+          <li style="margin-bottom: 8px;"><a href="#faq" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Часто задаваемые вопросы</a></li>
+          <li><a href="#requirements" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Требования к материалам</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">Контакты</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">Email: <a href="mailto:support@art-create.ru" style="color: #C85A3A; text-decoration: none;">support@art-create.ru</a></li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">ВКонтакте: <a href="https://vk.com/festivali_konkursi" target="_blank" style="color: #C85A3A; text-decoration: none;">@festivali_konkursi</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">Организаторы</h4>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin-bottom: 8px;">Культурный дом «Октава»</li>
+          <li style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666;">Частный Фонд «Модуль»</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border-top: 1px solid #E8E3D8; padding-top: 32px; text-align: center;">
+      <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0 0 8px 0;">&copy; 2026 Наследие Будущего. Все права защищены.</p>
+      <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; font-style: italic;">Искусство — это вечность, смотрящая на себя в зеркало времени</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     КОНЕЦ КОДА
+     ============================================================ -->

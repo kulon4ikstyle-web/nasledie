@@ -1,16 +1,15 @@
 <!-- ============================================================
-     НАСЛЕДИЕ БУДУЩЕГО — HTML КОД ДЛЯ ТИЛЬДЫ (итоговый с требованиями и FAQ)
-     Копируйте каждую секцию отдельно в блок «HTML-код» на Тильде
+     НАСЛЕДИЕ БУДУЩЕГО — ПОЛНЫЙ КОД ДЛЯ ТИЛЬДЫ
+     (все три кнопки в герое теперь одинаковые по цвету)
      ============================================================ -->
 
 <!-- ============================================================
-     1. ШАПКА (HEADER) — вставлять в самый верх сайта
+     СЕКЦИЯ 1: ШАПКА (HEADER)
      ============================================================ -->
 
 <header style="position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid #E8E3D8; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; height: 64px; flex-wrap: wrap;">
 
-    <!-- Логотип + название -->
     <div style="display: flex; align-items: center; gap: 12px;">
       <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663675182666/8Gt29WYsrFWH9AgdLWN547/logo-mark-APXfxbcVNALu7v8BGhSYQv.webp" alt="Логотип" style="height: 40px; width: 40px; flex-shrink: 0;">
       <div>
@@ -19,23 +18,22 @@
       </div>
     </div>
 
-    <!-- Навигация -->
     <nav style="display: flex; align-items: center; gap: 24px; margin: 0; flex-wrap: wrap;">
       <a href="#about" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">О конкурсе</a>
       <a href="#benefits" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">Преимущества</a>
       <a href="#nominations" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">Номинации</a>
       <a href="#requirements" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">Требования</a>
       <a href="#faq" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #2B2B2B; text-decoration: none; transition: color 0.3s;">FAQ</a>
+      <a href="https://cloud.mail.ru/public/EJFg/f8bCsKxTS" target="_blank" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #C85A3A; text-decoration: none; font-weight: 600; transition: color 0.3s;">📄 Положение</a>
       <a href="#apply-form" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #C85A3A; text-decoration: none; font-weight: 600; transition: color 0.3s;">Заявка</a>
     </nav>
 
-    <!-- Кнопка -->
     <a href="#apply-form" style="background: #C85A3A; color: #fff; padding: 10px 22px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; transition: background 0.3s; white-space: nowrap;">Подать заявку</a>
   </div>
 </header>
 
 <!-- ============================================================
-     2. ГЕРОЙ (HERO SECTION)
+     СЕКЦИЯ 2: ГЕРОЙ (HERO) — три одинаковые кнопки по центру
      ============================================================ -->
 
 <section style="position: relative; min-height: 560px; height: 100vh; max-height: 700px; overflow: hidden; background: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663675182666/8Gt29WYsrFWH9AgdLWN547/hero-banner-6YpkDpuSvGN44DsjYm8x79.webp') center/cover no-repeat;">
@@ -45,9 +43,12 @@
   <div style="position: relative; max-width: 1200px; margin: 0 auto; padding: 0 40px; height: 100%; display: flex; flex-direction: column; justify-content: center; max-width: 640px;">
     <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(32px, 6vw, 56px); font-weight: 700; color: #fff; margin: 0 0 16px 0; line-height: 1.2;">Творческое будущее России</h2>
     <p style="font-family: 'Inter', sans-serif; font-size: clamp(16px, 2vw, 20px); color: rgba(255,255,255,0.92); margin: 0 0 32px 0; line-height: 1.6;">Раскройте свой творческий потенциал на сцене, где каждый голос имеет значение</p>
-    <div style="display: flex; flex-wrap: wrap; gap: 16px;">
-      <a href="#apply-form" style="background: #C85A3A; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s;">Подать заявку</a>
-      <a href="#about" style="background: transparent; color: #fff; border: 2px solid #fff; padding: 12px 28px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s;">Узнать больше</a>
+    
+    <!-- Три одинаковые кнопки по центру -->
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center;">
+      <a href="#apply-form" style="background: #C85A3A; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s; border: none;">Подать заявку</a>
+      <a href="#about" style="background: #C85A3A; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s; border: none;">Узнать больше</a>
+      <a href="https://cloud.mail.ru/public/EJFg/f8bCsKxTS" target="_blank" style="background: #C85A3A; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; display: inline-block; transition: background 0.3s; border: none;">📄 Положение</a>
     </div>
   </div>
 
@@ -57,7 +58,7 @@
 </section>
 
 <!-- ============================================================
-     3. О КОНКУРСЕ (ABOUT)
+     СЕКЦИЯ 3: О КОНКУРСЕ (ABOUT)
      ============================================================ -->
 
 <section id="about" style="background: #F5F1E8; padding: 80px 20px;">
@@ -102,7 +103,7 @@
 </section>
 
 <!-- ============================================================
-     4. ПРЕИМУЩЕСТВА (BENEFITS)
+     СЕКЦИЯ 4: ПРЕИМУЩЕСТВА (BENEFITS)
      ============================================================ -->
 
 <section id="benefits" style="background: #fff; padding: 80px 20px;">
@@ -146,7 +147,7 @@
 </section>
 
 <!-- ============================================================
-     5. НОМИНАЦИИ (NOMINATIONS)
+     СЕКЦИЯ 5: НОМИНАЦИИ (NOMINATIONS)
      ============================================================ -->
 
 <section id="nominations" style="background: #F5F1E8; padding: 80px 20px;">
@@ -222,7 +223,7 @@
 </section>
 
 <!-- ============================================================
-     6. ИНТЕРЕСНЫЕ ФАКТЫ (ART FACTS)
+     СЕКЦИЯ 6: ИНТЕРЕСНЫЕ ФАКТЫ (ART FACTS)
      ============================================================ -->
 
 <section id="facts" style="background: #fff; padding: 80px 20px; position: relative; overflow: hidden;">
@@ -269,7 +270,7 @@
 </section>
 
 <!-- ============================================================
-     7. КРИТЕРИИ ОЦЕНКИ (CRITERIA)
+     СЕКЦИЯ 7: КРИТЕРИИ ОЦЕНКИ (CRITERIA)
      ============================================================ -->
 
 <section style="background: #F5F1E8; padding: 80px 20px;">
@@ -323,7 +324,7 @@
 </section>
 
 <!-- ============================================================
-     8. ТРЕБОВАНИЯ К МАТЕРИАЛАМ (REQUIREMENTS) — НОВЫЙ БЛОК
+     СЕКЦИЯ 8: ТРЕБОВАНИЯ К МАТЕРИАЛАМ (REQUIREMENTS)
      ============================================================ -->
 
 <section id="requirements" style="background: #fff; padding: 80px 20px;">
@@ -334,7 +335,6 @@
 
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
 
-      <!-- Видеовыступления -->
       <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #C85A3A;">
         <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">🎥 Видеовыступления</h3>
         <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
@@ -348,7 +348,6 @@
         </ul>
       </div>
 
-      <!-- Фото работ (ИЗО и ДПИ) -->
       <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #6BA876;">
         <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #6BA876; margin: 0 0 16px 0;">🖼️ Фото работ (ИЗО и ДПИ)</h3>
         <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
@@ -361,7 +360,6 @@
         </ul>
       </div>
 
-      <!-- Фотоискусство -->
       <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #C85A3A;">
         <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #C85A3A; margin: 0 0 16px 0;">📸 Фотоискусство</h3>
         <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
@@ -375,7 +373,6 @@
         </ul>
       </div>
 
-      <!-- Кино и видео -->
       <div style="background: #F5F1E8; border-radius: 12px; padding: 24px; border-left: 4px solid #6BA876;">
         <h3 style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: #6BA876; margin: 0 0 16px 0;">🎬 Кино- и видеоискусство</h3>
         <ul style="list-style: none; padding: 0; margin: 0; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.8;">
@@ -395,7 +392,7 @@
 </section>
 
 <!-- ============================================================
-     9. ПРИЗЫВ К ДЕЙСТВИЮ (CTA)
+     СЕКЦИЯ 9: ПРИЗЫВ К ДЕЙСТВИЮ (CTA)
      ============================================================ -->
 
 <section style="background: linear-gradient(135deg, #C85A3A 0%, rgba(200,90,58,0.85) 100%); padding: 80px 20px; text-align: center; color: #fff;">
@@ -407,7 +404,7 @@
 </section>
 
 <!-- ============================================================
-     10. ФОРМА ЗАЯВКИ (APPLICATION FORM)
+     СЕКЦИЯ 10: ФОРМА ЗАЯВКИ (APPLICATION FORM)
      ============================================================ -->
 
 <section id="apply-form" style="background: #fff; padding: 80px 20px;">
@@ -416,7 +413,7 @@
     <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 16px 0;">Заявка на участие</h2>
     <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); text-align: center; margin: 0 0 40px 0; line-height: 1.6;">Заполните форму, чтобы подать заявку на конкурс. Все поля, отмеченные <span style="color:#C85A3A;">*</span>, обязательны для заполнения.</p>
 
-    <form action="/apply" method="POST" enctype="multipart/form-data" style="display: flex; flex-direction: column; gap: 24px;">
+    <form id="apply-form" method="POST" style="display: flex; flex-direction: column; gap: 24px;">
 
       <div>
         <label for="fullname" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО участника (или название коллектива) <span style="color:#C85A3A;">*</span></label>
@@ -432,15 +429,15 @@
         <label for="nomination" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Номинация <span style="color:#C85A3A;">*</span></label>
         <select id="nomination" name="nomination" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; background: #fff;">
           <option value="">Выберите номинацию</option>
-          <option value="vocal">Вокальное искусство</option>
-          <option value="choreo">Хореографическое искусство</option>
-          <option value="instrumental">Инструментальное исполнительство</option>
-          <option value="theatre">Театральное искусство</option>
-          <option value="fineart">Изобразительное искусство</option>
-          <option value="decorative">Декоративно-прикладное искусство</option>
-          <option value="original">Оригинальный жанр</option>
-          <option value="photo">Фотоискусство</option>
-          <option value="cinema">Кино- и видеоискусство</option>
+          <option value="Вокальное искусство">Вокальное искусство</option>
+          <option value="Хореографическое искусство">Хореографическое искусство</option>
+          <option value="Инструментальное исполнительство">Инструментальное исполнительство</option>
+          <option value="Театральное искусство">Театральное искусство</option>
+          <option value="Изобразительное искусство">Изобразительное искусство</option>
+          <option value="Декоративно-прикладное искусство">Декоративно-прикладное искусство</option>
+          <option value="Оригинальный жанр">Оригинальный жанр</option>
+          <option value="Фотоискусство">Фотоискусство</option>
+          <option value="Кино- и видеоискусство">Кино- и видеоискусство</option>
         </select>
       </div>
 
@@ -468,14 +465,14 @@
         <label for="agecategory" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Возрастная категория <span style="color:#C85A3A;">*</span></label>
         <select id="agecategory" name="agecategory" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; background: #fff;">
           <option value="">Выберите категорию</option>
-          <option value="до 7 лет">Младшая детская (до 7 лет)</option>
-          <option value="8-11 лет">Средняя детская (8–11 лет)</option>
-          <option value="12-16 лет">Подростковая (12–16 лет)</option>
-          <option value="17-25 лет">Молодёжная (17–25 лет)</option>
-          <option value="26+">Взрослые (от 26 лет)</option>
-          <option value="смешанная">Смешанная категория</option>
-          <option value="учитель-ученик">Учитель и ученик</option>
-          <option value="преподаватель">Преподаватель — мастер</option>
+          <option value="Младшая детская (до 7 лет)">Младшая детская (до 7 лет)</option>
+          <option value="Средняя детская (8–11 лет)">Средняя детская (8–11 лет)</option>
+          <option value="Подростковая (12–16 лет)">Подростковая (12–16 лет)</option>
+          <option value="Молодёжная (17–25 лет)">Молодёжная (17–25 лет)</option>
+          <option value="Взрослые (от 26 лет)">Взрослые (от 26 лет)</option>
+          <option value="Смешанная категория">Смешанная категория</option>
+          <option value="Учитель и ученик">Учитель и ученик</option>
+          <option value="Преподаватель — мастер">Преподаватель — мастер</option>
         </select>
       </div>
 
@@ -494,10 +491,15 @@
         <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
       </div>
 
-      <div>
-        <label style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Загрузка конкурсных материалов <span style="color:#C85A3A;">*</span></label>
-        <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0 0 12px 0;">Принимаются файлы видео (MP4, MOV), фото (JPEG, PNG) и документы (PDF). Максимальный размер каждого файла — 1 ГБ (для видео) или 20 МБ (для фото).</p>
-        <input type="file" id="file" name="file" accept=".mp4,.mov,.jpeg,.jpg,.png,.pdf" required multiple style="width: 100%; padding: 8px 0; font-family: 'Inter', sans-serif; font-size: 16px;">
+      <!-- Инструкция по отправке материалов -->
+      <div style="background: #F5F1E8; border-radius: 12px; padding: 20px; border-left: 4px solid #C85A3A;">
+        <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; margin: 0 0 6px 0;"><strong>📎 Как отправить конкурсные материалы?</strong></p>
+        <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: #444; margin: 0; line-height: 1.6;">
+          После отправки этой заявки вы получите подтверждение на e-mail. Пожалуйста, пришлите ваши конкурсные работы (видео, фото, документы) на электронную почту 
+          <a href="mailto:support@art-create.ru" style="color: #C85A3A; text-decoration: underline;">support@art-create.ru</a> 
+          с темой письма <strong>«Материалы к заявке [ваше ФИО]»</strong> в течение 3 рабочих дней. Подробные технические требования смотрите в разделе 
+          <a href="#requirements" style="color: #C85A3A; text-decoration: underline;">«Требования к материалам»</a>.
+        </p>
       </div>
 
       <div style="display: flex; align-items: flex-start; gap: 12px; margin-top: 8px;">
@@ -521,7 +523,7 @@
 </section>
 
 <!-- ============================================================
-     11. ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ (FAQ) — НОВЫЙ БЛОК
+     СЕКЦИЯ 11: ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ (FAQ)
      ============================================================ -->
 
 <section id="faq" style="background: #F5F1E8; padding: 80px 20px;">
@@ -578,7 +580,7 @@
 </section>
 
 <!-- ============================================================
-     12. ФУТЕР (FOOTER) — ОБНОВЛЁННЫЙ
+     СЕКЦИЯ 12: ФУТЕР (FOOTER)
      ============================================================ -->
 
 <footer style="background: #fff; border-top: 1px solid #E8E3D8; padding: 48px 20px;">
@@ -600,7 +602,7 @@
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="margin-bottom: 8px;"><a href="#apply-form" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Подать заявку</a></li>
           <li style="margin-bottom: 8px;"><a href="#faq" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Часто задаваемые вопросы</a></li>
-          <li><a href="#requirements" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">Требования к материалам</a></li>
+          <li><a href="https://cloud.mail.ru/public/EJFg/f8bCsKxTS" target="_blank" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; text-decoration: none; transition: color 0.3s;">📄 Положение конкурса</a></li>
         </ul>
       </div>
 
@@ -627,6 +629,65 @@
     </div>
   </div>
 </footer>
+
+<!-- ============================================================
+     СКРИПТ ОТПРАВКИ ФОРМЫ В GOOGLE TABLES (актуальный URL)
+     ============================================================ -->
+
+<script>
+  (function() {
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzYQ0mG3ONVkpu3ktDT2RP6u2plCpcSTbD_VCxAW069-fRkDJBMWLrlQ8K5k2F49UFPJQ/exec';
+
+    const form = document.getElementById('apply-form');
+    if (!form) return;
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Отправка...';
+      }
+
+      try {
+        const formData = new FormData(form);
+        const params = new URLSearchParams();
+        for (const [key, value] of formData.entries()) {
+          if (key !== 'consent' && key !== 'file') {
+            params.append(key, value);
+          }
+        }
+
+        const response = await fetch(SCRIPT_URL, {
+          method: 'POST',
+          body: params,
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        });
+
+        const result = await response.json();
+
+        if (result.result === 'success') {
+          alert('✅ Заявка успешно отправлена!');
+          form.reset();
+        } else {
+          alert('❌ Произошла ошибка при отправке. Попробуйте ещё раз.\n' + (result.error || ''));
+          console.error('Ошибка от скрипта:', result);
+        }
+      } catch (error) {
+        alert('❌ Ошибка соединения. Проверьте интернет и попробуйте снова.');
+        console.error('Ошибка отправки:', error);
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Отправить заявку';
+        }
+      }
+    });
+  })();
+</script>
 
 <!-- ============================================================
      КОНЕЦ КОДА

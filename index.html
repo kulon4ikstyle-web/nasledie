@@ -404,119 +404,27 @@
 </section>
 
 <!-- ============================================================
-     СЕКЦИЯ 10: ФОРМА ЗАЯВКИ (APPLICATION FORM)
+     СЕКЦИЯ 10: ФОРМА ЗАЯВКИ (GOOGLE FORM IFRAME)
      ============================================================ -->
 
 <section id="apply-form" style="background: #fff; padding: 80px 20px;">
   <div style="max-width: 900px; margin: 0 auto;">
 
     <h2 style="font-family: 'Playfair Display', serif; font-size: clamp(30px, 4vw, 42px); font-weight: 700; color: #C85A3A; text-align: center; margin: 0 0 16px 0;">Заявка на участие</h2>
-    <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); text-align: center; margin: 0 0 40px 0; line-height: 1.6;">Заполните форму, чтобы подать заявку на конкурс. Все поля, отмеченные <span style="color:#C85A3A;">*</span>, обязательны для заполнения.</p>
+    <p style="font-family: 'Inter', sans-serif; font-size: 18px; color: rgba(43,43,43,0.85); text-align: center; margin: 0 0 40px 0; line-height: 1.6;">Заполните форму прямо на сайте. Все данные будут отправлены через защищённый сервис Google Формы.</p>
 
-    <form id="apply-form" method="POST" style="display: flex; flex-direction: column; gap: 24px;">
+    <!-- Встроенная Google Форма -->
+    <div style="border: 1px solid #E8E3D8; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfc1_HF7Dc1UMQjSweu-01hw_VGTDUHTgWEQd0PgXNxjoDdsw/viewform?embedded=true" 
+              width="100%" height="5597px" frameborder="0" marginheight="0" marginwidth="0" 
+              style="border: none; display: block;">
+        Загрузка формы…
+      </iframe>
+    </div>
 
-      <div>
-        <label for="fullname" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО участника (или название коллектива) <span style="color:#C85A3A;">*</span></label>
-        <input type="text" id="fullname" name="fullname" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; transition: border-color 0.3s;">
-      </div>
-
-      <div>
-        <label for="region" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Регион и населённый пункт <span style="color:#C85A3A;">*</span></label>
-        <input type="text" id="region" name="region" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="nomination" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Номинация <span style="color:#C85A3A;">*</span></label>
-        <select id="nomination" name="nomination" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; background: #fff;">
-          <option value="">Выберите номинацию</option>
-          <option value="Вокальное искусство">Вокальное искусство</option>
-          <option value="Хореографическое искусство">Хореографическое искусство</option>
-          <option value="Инструментальное исполнительство">Инструментальное исполнительство</option>
-          <option value="Театральное искусство">Театральное искусство</option>
-          <option value="Изобразительное искусство">Изобразительное искусство</option>
-          <option value="Декоративно-прикладное искусство">Декоративно-прикладное искусство</option>
-          <option value="Оригинальный жанр">Оригинальный жанр</option>
-          <option value="Фотоискусство">Фотоискусство</option>
-          <option value="Кино- и видеоискусство">Кино- и видеоискусство</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="worktitle" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Название работы <span style="color:#C85A3A;">*</span></label>
-        <input type="text" id="worktitle" name="worktitle" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="teacher1" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО первого руководителя / педагога <span style="color:#C85A3A;">*</span></label>
-        <input type="text" id="teacher1" name="teacher1" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="teacher2" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО второго руководителя / педагога</label>
-        <input type="text" id="teacher2" name="teacher2" style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="teacher3" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">ФИО третьего руководителя / педагога</label>
-        <input type="text" id="teacher3" name="teacher3" style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="agecategory" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Возрастная категория <span style="color:#C85A3A;">*</span></label>
-        <select id="agecategory" name="agecategory" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px; background: #fff;">
-          <option value="">Выберите категорию</option>
-          <option value="Младшая детская (до 7 лет)">Младшая детская (до 7 лет)</option>
-          <option value="Средняя детская (8–11 лет)">Средняя детская (8–11 лет)</option>
-          <option value="Подростковая (12–16 лет)">Подростковая (12–16 лет)</option>
-          <option value="Молодёжная (17–25 лет)">Молодёжная (17–25 лет)</option>
-          <option value="Взрослые (от 26 лет)">Взрослые (от 26 лет)</option>
-          <option value="Смешанная категория">Смешанная категория</option>
-          <option value="Учитель и ученик">Учитель и ученик</option>
-          <option value="Преподаватель — мастер">Преподаватель — мастер</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="institution" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Учреждение (школа, студия, вуз и т.п.)</label>
-        <input type="text" id="institution" name="institution" style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="email" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Контактный e-mail <span style="color:#C85A3A;">*</span></label>
-        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <div>
-        <label for="phone" style="font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: block; margin-bottom: 6px;">Контактный телефон <span style="color:#C85A3A;">*</span></label>
-        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 12px 16px; border: 1px solid #D1CEC6; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 16px;">
-      </div>
-
-      <!-- Инструкция по отправке материалов -->
-      <div style="background: #F5F1E8; border-radius: 12px; padding: 20px; border-left: 4px solid #C85A3A;">
-        <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; margin: 0 0 6px 0;"><strong>📎 Как отправить конкурсные материалы?</strong></p>
-        <p style="font-family: 'Inter', sans-serif; font-size: 15px; color: #444; margin: 0; line-height: 1.6;">
-          После отправки этой заявки вы получите подтверждение на e-mail. Пожалуйста, пришлите ваши конкурсные работы (видео, фото, документы) на электронную почту 
-          <a href="mailto:support@art-create.ru" style="color: #C85A3A; text-decoration: underline;">support@art-create.ru</a> 
-          с темой письма <strong>«Материалы к заявке [ваше ФИО]»</strong> в течение 3 рабочих дней. Подробные технические требования смотрите в разделе 
-          <a href="#requirements" style="color: #C85A3A; text-decoration: underline;">«Требования к материалам»</a>.
-        </p>
-      </div>
-
-      <div style="display: flex; align-items: flex-start; gap: 12px; margin-top: 8px;">
-        <input type="checkbox" id="consent" name="consent" required style="width: 20px; height: 20px; margin-top: 2px; flex-shrink: 0;">
-        <label for="consent" style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; line-height: 1.5;">Я даю согласие на обработку моих персональных данных в соответствии с Федеральным законом № 152-ФЗ «О персональных данных» <span style="color:#C85A3A;">*</span></label>
-      </div>
-
-      <div style="text-align: center; margin-top: 8px;">
-        <button type="submit" style="background: #C85A3A; color: #fff; padding: 16px 48px; border: none; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 600; cursor: pointer; transition: background 0.3s;">Отправить заявку</button>
-      </div>
-
-      <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #999; text-align: center; margin: 16px 0 0 0;">После отправки вы получите уведомление о модерации в течение 3 рабочих дней.</p>
-
-    </form>
-
-    <div style="margin-top: 48px; background: #F5F1E8; border-radius: 12px; padding: 24px; text-align: center;">
-      <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; margin: 0 0 8px 0;">Организационный взнос за участие: <strong style="color: #C85A3A;">250 рублей</strong> за одну заявку.</p>
+    <!-- Информация об оргвзносе 150 рублей -->
+    <div style="margin-top: 32px; background: #F5F1E8; border-radius: 12px; padding: 24px; text-align: center;">
+      <p style="font-family: 'Inter', sans-serif; font-size: 16px; color: #2B2B2B; margin: 0 0 8px 0;">Организационный взнос за участие: <strong style="color: #C85A3A;">150 рублей</strong> за одну заявку.</p>
       <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: #666; margin: 0; line-height: 1.6;">Оплата производится после успешной модерации заявки. Способы оплаты: банковская карта или СБП.</p>
     </div>
   </div>
@@ -545,7 +453,7 @@
         <summary style="padding: 20px; cursor: pointer; background: #fff; font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #2B2B2B; display: flex; align-items: center; gap: 12px;">
           <span style="color: #C85A3A; font-size: 20px;">❓</span> Сколько стоит участие?
         </summary>
-        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Организационный взнос составляет <strong>250 рублей</strong> за одну заявку (одно выступление / одну работу / одну серию фотографий). Оплата производится после успешной модерации заявки.</div>
+        <div style="padding: 20px; background: #F5F1E8; font-family: 'Inter', sans-serif; font-size: 15px; color: #2B2B2B; line-height: 1.6;">Организационный взнос составляет <strong>150 рублей</strong> за одну заявку (одно выступление / одну работу / одну серию фотографий). Оплата производится после успешной модерации заявки.</div>
       </details>
 
       <details style="border-bottom: 1px solid #E8E3D8;">
@@ -629,65 +537,6 @@
     </div>
   </div>
 </footer>
-
-<!-- ============================================================
-     СКРИПТ ОТПРАВКИ ФОРМЫ В GOOGLE TABLES (актуальный URL)
-     ============================================================ -->
-
-<script>
-  (function() {
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzZUz4WiV2_hZWc5hnzLlBmJGFghvEwLRLSeCDKWDmRrnMn26WYl0Nvz-l8MAQTYoyrlA/exec';
-
-    const form = document.getElementById('apply-form');
-    if (!form) return;
-
-    form.addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      const submitBtn = form.querySelector('button[type="submit"]');
-      if (submitBtn) {
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Отправка...';
-      }
-
-      try {
-        const formData = new FormData(form);
-        const params = new URLSearchParams();
-        for (const [key, value] of formData.entries()) {
-          if (key !== 'consent' && key !== 'file') {
-            params.append(key, value);
-          }
-        }
-
-        const response = await fetch(SCRIPT_URL, {
-          method: 'POST',
-          body: params,
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-        });
-
-        const result = await response.json();
-
-        if (result.result === 'success') {
-          alert('✅ Заявка успешно отправлена!');
-          form.reset();
-        } else {
-          alert('❌ Произошла ошибка при отправке. Попробуйте ещё раз.\n' + (result.error || ''));
-          console.error('Ошибка от скрипта:', result);
-        }
-      } catch (error) {
-        alert('❌ Ошибка соединения. Проверьте интернет и попробуйте снова.');
-        console.error('Ошибка отправки:', error);
-      } finally {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Отправить заявку';
-        }
-      }
-    });
-  })();
-</script>
 
 <!-- ============================================================
      КОНЕЦ КОДА
